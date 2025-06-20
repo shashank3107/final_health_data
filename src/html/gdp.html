@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy vs GDP</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <script>
+        fetch('../html/navbar.html')
+            .then(res => res.text())
+            .then(html => { document.getElementById('navbar').innerHTML = html; });
+    </script>
+    <div class="container">
+        <h1>Life Expectancy vs GDP</h1>
+        <div id="chart-area"></div>
+    </div>
+    <script src="../scripts/world-health.js"></script>
+</body>
+
+</html>
